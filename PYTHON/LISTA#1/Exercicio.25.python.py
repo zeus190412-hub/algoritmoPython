@@ -1,0 +1,5 @@
+preço = float(input("Digite o preço do producto: "))
+taxa_inflação = float(input("Digite a taxa de inflação mensal (%): "))
+meses = int(input("Digite o numero de meses: "))
+preço_final =preço * ((1 + taxa_inflação / 100) ** meses)
+print(f"Após {meses} meses, o preço sera de R$ {preço_final:.2f}")
